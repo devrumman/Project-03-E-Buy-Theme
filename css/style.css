@@ -232,7 +232,6 @@ transition: all linear.4s;
 }
 .banner-arrow .left, .right{
     color: black;
-    border: 1px solid #fff;
     margin-left: 10px;
     font-size: 30px;
     height: 30px;
@@ -242,7 +241,6 @@ transition: all linear.4s;
 }
 .banner-arrow .left:hover, .right:hover{
     color: #de4644;
-    border: 1px solid #de4644;
     margin-left: 10px;
     height: 30px;
     width: 30px;
@@ -337,18 +335,291 @@ transition: all linear.4s;
     opacity: 0;
     transition: all linear.4s;
 }
-
 .service-img:hover .new{
     opacity: 1;
 }
-
-
-
-
-
-
-
-
+/*====== Filter ===========*/
+#filter{
+    padding: 100px 0;
+}
+.filter-head{
+    position: relative;
+    padding-bottom: 20px;
+}
+.filter-head h5{
+    font-size: 40px;
+    font-weight: 500;
+}
+.filter-head::after{
+    position: absolute;
+    content: '';
+    top: 50px;
+    left: 108px;
+    background: #de4644;
+    height: 1.5px;
+    width: 190px;
+}
+.filter-head::before{
+    position: absolute;
+    content: '';
+    top: 55px;
+    left: 108px;
+    background: #de4644;
+    height: 1.5px;
+    width: 150px;
+}
+.filter-head p{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-top: 50px;
+    color: #222;
+    border-left: 1px solid #222222;
+    cursor: pointer;
+    transition: all linear.4s;
+}
+.filter-head p:hover{
+    color: #de4644;
+}
+.img{
+    position: relative;
+    overflow: hidden;
+}
+.filter-nasted{
+    position: absolute;
+    top: 0;
+    right: -60px;
+    width: 100px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.699);
+    opacity: 0;
+    transition: all linear.4s;
+}
+.filter-nasted i{
+    position: relative;
+    top: 20%;
+    left: 25px;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 25px;
+    padding: 10px 12px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all linear.4s;
+}
+.img:hover .filter-nasted {
+    right: 0;
+    opacity: 1;
+}
+.filter-nasted i:hover{
+    color: #de4644;
+    border: 1px solid #de4644;
+}
+.filter-star i{
+    color: #de4644;
+}
+/*====== Timer =======*/
+#timer{
+    background: #f1f1f1;
+    padding: 50px 0;
+}
+.timer-text h4{
+    font-size: 20px!important;
+    font-weight: 500px;
+}
+.timer-text h3{
+    font-size: 40px!important;
+    font-weight: 500px;
+}
+.timer-text p{
+    font-size: 14px!important;
+    font-weight: 500px;
+     color: #444444;
+}
+.style{
+    padding: 10px 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid #222222;
+}
+/*====== Letest Product =======*/
+#latest{
+    padding: 100px 0;
+}
+.latest-header{
+    position: relative;
+    padding-bottom: 50px;
+}
+.latest-header h5{
+    font-size: 40px!important;
+    font-weight: 500;
+}
+.latest-header::after{
+    position: absolute;
+    content: '';
+    top: 55px;
+    left: 132px;
+    width: 190px;
+    height: 2px;
+    background: #de4644;
+}
+.latest-header::before{
+    position: absolute;
+    content: '';
+    top: 60px;
+    left: 132px;
+    width: 160px;
+    height: 2px;
+    background: #de4644;
+}
+.latest-arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+.latest-arrow .flt{
+    margin-top: 50px;
+    height: 30px;
+    width: 30px;
+    color: #222222;
+    font-size: 26px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #222222;
+    transition: all linear.4s;
+}
+.latest-arrow .rit{
+    margin-top: 50px;
+    height: 30px;
+    width: 30px;
+    color: #222222;
+    font-size: 26px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #222222;
+    transition: all linear.4s;
+}
+.latest-arrow .flt:hover, .rit:hover{
+    color: #fff;
+    background: #de4644;
+    border: 1px solid #222222;
+}
+/*====== Testimonial ===========*/
+#testimonilal-1{
+    padding: 100px 0;
+}
+.testimonial{
+    position: relative;
+    padding-bottom: 50px;
+}
+.testimonial h5{
+    text-align: center;
+    font-size: 40px!important;
+    font-weight: 500;
+}
+.testimonial::after{
+    position: absolute;
+    content: '';
+    top: 55px;
+    left: 615px;
+    width: 190px;
+    height: 2px;
+    background: #de4644;
+}
+.testimonial::before{
+    position: absolute;
+    content: '';
+    top: 60px;
+    left: 615px;
+    width: 160px;
+    height: 2px;
+    background: #de4644;
+}
+.background{
+    background: url(../img/bc-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+}
+.background::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.411);
+    height: 100%;
+    width: 100%;
+}
+.testimonilal-zindex{
+    position: relative;
+    z-index: 99;
+}
+.testimonilal-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.testimonilal-text h4{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.testimonilal-text h5{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 200;
+    font-style: italic;
+}
+.testimonilal-text p{
+    padding-top: 20px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+.testimonilal-text span{
+    font-size: 25px;
+    color: #dddddd;
+    font-weight: 400;
+    font-family: palace script MT;
+    text-align: right;
+    display: block;
+    padding-right: 15px;
+}
+.testimonilal-arrow{
+    
+}
+.testimonilal-arrow{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    
+}
+.testimonilal-arrow .flt, .rit{
+    margin-top: 50px;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #ffff;
+    transition: all linear.4s;
+}
+.testimonilal-arrow .flt:hover, .rit:hover{
+    background: #de4644;
+    border: 1px solid #de4644;
+}
 
 
 
