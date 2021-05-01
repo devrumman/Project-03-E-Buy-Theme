@@ -1,4 +1,20 @@
 /*======EXT SM Device======*/
 @media(max-width:575.98px){
-    
+    .search i {
+	padding-left: 180px;
+}
+    .search input {
+	opacity: 1;
+}
+    .top-right::before {
+	top: 10px;
+}
+    .top-right::after {
+	top: 10px;
+}
+    .banner-text p {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+}
 }
